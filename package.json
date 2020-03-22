@@ -1,0 +1,32 @@
+{
+  "name": "pfchameleon-back",
+  "version": "1.0.0",
+  "description": "Tutorials Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsisPMR/Chameleon-back.git"
+  },
+  "author": "Isis Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsisPMR/Chameleon-back/issues"
+  },
+  "homepage": "https://github.com/IsisPMR/Chameleon-back#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/mysql": "^2.15.9",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
