@@ -1,11 +1,13 @@
 import express, {Router} from "express";
+import main from "../controllers/Tutorials/main";
 import list from "../controllers/Tutorials/list";
 import create from "../controllers/Tutorials/create";
 /* import deleteTut from "../controllers/Tutorials/tutdelete";
 import update from "../controllers/Tutorials/update"; */
 const  router: Router = express.Router();
 
-router.get('/list', list);
+router.get('/main', main);
+router.get('/list/:id', list);
 router.post('/create', create);
 /* router.delete('/delete/:id', deleteTut);
 router.update('/update/:id', update); */
