@@ -3,6 +3,8 @@ import con from '../../connection/connection';
 
 export default (req: Request, res: Response) => {
     const name = req.body.params.name;
+    /* const linkImg = req.body.params.linkImg; 
+    const channel = req.body.params.channel;  */
     const link = req.body.params.link;
     const category = req.body.params.category;
     con.query(`INSERT INTO tutorials(tut_title, tut_mp4, category_id) values("${name}", "${link}", ${category})`, function (err, result, fields){
