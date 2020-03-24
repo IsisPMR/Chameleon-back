@@ -5,9 +5,11 @@ export default (req: Request, res: Response) => {
     const name = req.body.params.name;
     /* const linkImg = req.body.params.linkImg; 
     const channel = req.body.params.channel;  */
-    const link = req.body.params.link;
+    const linkT = req.body.params.linkT;
+    const linkI = req.body.params.linkI;
+    const channel = req.body.params.channel;
     const category = req.body.params.category;
-    con.query(`INSERT INTO tutorials(tut_title, tut_mp4, category_id) values("${name}", "${link}", ${category})`, function (err, result, fields){
+    con.query(`INSERT INTO tutorials(tut_title, tut_image, tut_channel, tut_mp4, category_id) values("${name}", "${linkI}", "${channel}", "${linkT}", ${category})`, function (err, result, fields){
         if (err){
             throw err;
         } else {
