@@ -9,9 +9,9 @@ const con = mysql.createConnection({
       });
       con.connect((err) => {
         if(err){
-            console.log("No hay conexion");
+            console.log("There's no connection");
         }else{
-            console.log("Conectados");
+            console.log("You're connected");
         }
       });
 export default con;

@@ -3,8 +3,6 @@ import con from '../../connection/connection';
 
 export default (req: Request, res: Response) => {
     const name = req.body.params.name;
-    /* const linkImg = req.body.params.linkImg; 
-    const channel = req.body.params.channel;  */
     const linkT = req.body.params.linkT;
     const linkI = req.body.params.linkI;
     const channel = req.body.params.channel;
