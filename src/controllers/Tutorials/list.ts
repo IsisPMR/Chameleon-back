@@ -4,7 +4,7 @@ import con from '../../connection/connection';
 export default (req: Request, res: Response) => {
     console.log(req.params.id);
     const id = req.params.id;
-    con.query(`SELECT * FROM tutorials WHERE category_id=${id}`, function (err, result, fields){
+    con.query(`SELECT * FROM tutorials WHERE category_id=${id} && tut_available=1`, function (err, result, fields){
         if (err){
             throw err;
         } else {

@@ -14,5 +14,4 @@ export default (req: Request, res: Response) => {
             res.status(200).send(result);
         }
     });
-   /*  console.log(req.body.params); */
 }
